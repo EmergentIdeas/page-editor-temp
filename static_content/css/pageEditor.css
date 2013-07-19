@@ -1,0 +1,40 @@
+.edit-content-inline:not(.cke_focus):hover {
+	/* border: solid 1px blue; */
+	box-shadow: 2px 2px 1px #888888;
+	position: relative;
+	background-color: #F8F8FF;
+}
+
+.edit-content-inline:not(.cke_focus):hover:after {
+	content: 'click to edit';
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	padding: .25em;
+	background-color: white;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#page-properties {
+	width: 100%;
+	background-color: black;
+	color: white;
+	padding: .5em;
+}
+
+
+#page-properties .page-properties-inner {
+	display: none;
+}
+
+#page-properties:hover .page-properties-inner {
+	display: block;
+}
+
+.page-properties-save {
+	float: right;
+	
+}

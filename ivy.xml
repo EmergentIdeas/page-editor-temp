@@ -1,0 +1,17 @@
+<ivy-module version="2.0">
+	<info organisation="com.emergentideas" module="base" />
+	<configurations defaultconf="build"	defaultconfmapping="build->*;test->default">
+		<conf name="build" />
+		<conf name="deployment" />
+		<conf name="appdep" />
+		<conf name="test" />
+		<conf name="jetty" />
+	</configurations>
+	<dependencies>
+		<dependency org="net.sf.webdav-servlet" name="webdav-servlet" rev="2.0" conf="appdep->default" />
+	
+    	<dependency org="com.emergentideas" name="webhandle" rev="1.0.0.6" conf="build" />	
+		<dependency org="com.emergentideas" name="oak_login" rev="1.0.0.4" conf="appdep" />
+		<dependency org="org.eclipse.jetty" name="jetty-runner" rev="latest.integration" conf="jetty->*"/>
+	</dependencies>
+</ivy-module>

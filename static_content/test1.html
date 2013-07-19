@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<script type="text/javascript" src="/js/jquery-1.9.1.js" ></script>
+		<script type="text/javascript" src="/ckeditor/ckeditor.js" ></script>
+		<script type="text/javascript" src="/ckeditor/adapters/jquery.js" ></script>
+		<script type="text/javascript" src="/js/pageEditor.js" ></script>
+		<style type="text/css">
+			@import url('/css/pageEditor.css')
+		</style>
+	</head>
+	<body>
+		<div id="page-properties">
+			This is where you edit the properties.
+			<button class="page-properties-save" type="submit" disabled="disabled">Save</button>
+			<div class="page-properties-inner" >
+				<form>
+					Title: <input type="text" name="title" /><br/>
+					Keywords: <input type="text" name="keywords" /><br/>
+					Description: <textarea type="text" name="description" ></textarea><br/>
+					<input type="hidden" id="section1" name="section1" />
+				</form>
+			</div>
+		</div>
+		
+		<h1>An Editable Test Page</h1>
+		<div id="editable" class="edit-content-inline" data-input-identifier="#section1" >
+		    <h1>Inline Editing in Action!</h1>
+		    <p>The div element that contains this text is now editable.
+		</div>
+		<div>
+			<p>And this is some text that comes after the element.</p>
+		</div>
+		
+		
+	</body>
+</html>
